@@ -46,34 +46,34 @@ var environments = {
       ENV: {
         name: 'development',
         version: version + '-local',
-        html5Mode: true,
-        apiEndpoint: 'http://rest.stomt'
+        html5Mode: false,
+        apiEndpoint: 'http://rest.local.com'
       }
     }
   },
   testing: {
     rev: true,
     uglify: true,
-    deployBranch: 'deploy/test',
+    deployBranch: 'gh-pages',
     constants: {
       ENV: {
         name: 'testing',
         version: version + '-' + Math.floor((Math.random() * 1000000)),
-        html5Mode: true,
-        apiEndpoint: 'https://test.rest.stomt.com'
+        html5Mode: false,
+        apiEndpoint: 'https://test.rest.domain.com'
       }
     }
   },
   production: {
     rev: true,
     uglify: true,
-    deployBranch: 'deploy/production',
+    deployBranch: 'gh-pages',
     constants: {
       ENV: {
         name: 'production',
         version: version,
-        html5Mode: true,
-        apiEndpoint: 'https://rest.stomt.com'
+        html5Mode: false,
+        apiEndpoint: 'https://rest.domain.com'
       }
     }
   }
