@@ -41,26 +41,18 @@ var environments = {
   development: {
     rev: false,
     uglify: false,
-    deployBranch: false,
+    deployBranch: undefined,
+    context: {
+      APP: 'sampleApp',
+      VERSION: version + '-local',
+      BASE: '/'
+    },
     constants: {
       ENV: {
         name: 'development',
         version: version + '-local',
-        html5Mode: false,
+        html5Mode: true,
         apiEndpoint: 'http://rest.local.com'
-      }
-    }
-  },
-  testing: {
-    rev: true,
-    uglify: true,
-    deployBranch: 'gh-pages',
-    constants: {
-      ENV: {
-        name: 'testing',
-        version: version + '-' + Math.floor((Math.random() * 1000000)),
-        html5Mode: false,
-        apiEndpoint: 'https://test.rest.domain.com'
       }
     }
   },
@@ -68,11 +60,16 @@ var environments = {
     rev: true,
     uglify: true,
     deployBranch: 'gh-pages',
+    context: {
+      APP: 'sampleApp',
+      VERSION: version,
+      BASE: '/angular-sample-app/'
+    },
     constants: {
       ENV: {
         name: 'production',
         version: version,
-        html5Mode: false,
+        html5Mode: true,
         apiEndpoint: 'https://rest.domain.com'
       }
     }
@@ -151,7 +148,6 @@ var config = {
   dirname: __dirname,
   port: port,
   testingPort: testingPort,
-  appName: appName,
   configName: configName,
   templateName: templateName
 };

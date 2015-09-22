@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns:ng="http://angularjs.org" ng-app="sampleApp">
+<html xmlns:ng="http://angularjs.org" ng-app="<!-- @echo APP -->">
   <head ng-controller="HeadCtrl as headCtrl">
     <meta charset="utf-8"/>
     <meta name="fragment" content="!"/>
@@ -7,7 +7,8 @@
     <meta name="robots" content="index,follow,noodp,noydir"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
-    <!--<base href="/">-->
+    <meta name="version" content="<!-- @echo VERSION -->">
+    <base href="<!-- @echo BASE -->">
 
     <!-- metadata -->
     <title ng-bind="headCtrl.metadata.pageTitle">angular sample app</title>
