@@ -1,0 +1,4 @@
+# robotstxt.org
+
+User-agent: *
+Sitemap: http://rest.stomt.com/sitemap.xml

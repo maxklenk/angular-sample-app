@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+
+# build
+bower_components
+dist
+node_modules
+
+# IDE
+.idea
+*.iml
+clitool
+
+# For phonegap
+!www/config.xml
+!www/icon.png
+!www/splash.png
+!www/res
+www
+
+# deploy
+.publish
+
+# testing
+test-results
+coverage
+unit-results.xml

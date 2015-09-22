@@ -1,0 +1,28 @@
+{
+  "name": "angular-sample-app",
+  "version": "0.0.0",
+  "authors": [
+    "Max Klenk <max@klenk.biz>"
+  ],
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/maxklenk/angular-sample-app",
+  "ignore": [],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-ui-router": "~0.2.15",
+    "angulartics": "~0.20.1",
+    "angulartics-google-analytics": "~0.1.1",
+    "ng-rollbar": "~0.4.0",
+    "normalize-css": "normalize.css#~3.0.3"
+  },
+  "overrides": {
+    "angulartics": {
+      "main": [
+        "src/angulartics.js"
+      ],
+      "dependencies": []
+    }
+  }
+}
