@@ -2,8 +2,8 @@
 
 angular
   .module('sampleApp', [
-    'sampleApp.config',
-    'sampleApp.templates',
+    'app.config',
+    'app.templates',
 
     'ui.router',
     'angulartics',
