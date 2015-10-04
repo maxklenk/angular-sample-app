@@ -196,9 +196,3 @@ gulpModular(gulp, config);
 gulp.task('deploy', function() {
   runSequence('clean', 'git-deploy');
 });
-
-// gulp check
-// runs all kinds of checks
-gulp.task('check', function() {
-  runSequence('jshint', 'karma');
-});
