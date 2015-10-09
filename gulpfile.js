@@ -18,6 +18,7 @@ var environments = {
     deployBranch: undefined,
     context: {
       APP: 'sampleApp',
+      STOMT: 'angular-sample-app',
       VERSION: version + '-local',
       BASE: '/'
     },
@@ -36,6 +37,7 @@ var environments = {
     deployBranch: 'gh-pages',
     context: {
       APP: 'sampleApp',
+      STOMT: 'angular-sample-app',
       VERSION: version,
       BASE: '/angular-sample-app/'
     },

@@ -55,6 +55,22 @@
     <!-- inject:js -->
     <!-- endinject -->
 
+    <!-- Stomt Feedback -->
+    <!-- @ifdef STOMT -->
+    <script>
+      // Include the Stomt JavaScript SDK
+      (function(w, d, n, r, t, s){
+        w.Stomt = w.Stomt||[];
+        t = d.createElement(n);
+        s = d.getElementsByTagName(n)[0];
+        t.async=1;
+        t.src=r;
+        s.parentNode.insertBefore(t,s)
+      })(window, document, 'script', '//www.stomt.com/widget.js');
+      Stomt.push(['addTab', {targetId: '<!-- @echo STOMT -->'}]);
+    </script>
+    <!-- @endif -->
+
     <!-- Google Analytics -->
     <!-- @ifdef ANALYTICS -->
     <script>
