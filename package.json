@@ -12,6 +12,9 @@
   "keywords": [],
   "author": "Max Klenk <max@klenk.biz>",
   "license": "MIT",
+  "engines": {
+    "node": ">=0.11.0"
+  },
   "devDependencies": {
     "gulp": "~3.9.0",
     "gulp-modular": "~0.2.0",
