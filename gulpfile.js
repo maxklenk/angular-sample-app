@@ -114,7 +114,16 @@ var config = {
 
   //// task [`statics`] collects all "static" files and stores them in a dedicated distribution folder
   statics: {
-    //  src: ['app/.htaccess', 'app/favicon.ico', 'app/robots.txt'], // glob that points to all static files
+    src: [
+
+      'app/.htaccess',
+      'app/favicon.ico',
+      'app/robots.txt',
+
+      // CI file to ignore building deploy branches
+      'app/circle.yml'
+
+    ], // glob that points to all static files
     //  dest: 'dist/' // destination of the static files
   },
 
@@ -163,7 +172,7 @@ var config = {
   },
 
   /***** Deployment *****/
-  
+
   //// task [`gitDeploy`] deploys to a specific branch in your git repository
   gitDeploy: {
     //  src: 'dist/', // the local root of the deploy repo

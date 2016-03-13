@@ -25,4 +25,5 @@ deployment:
   production:
     branch: master
     commands:
+      - gulp clean
       - gulp git-deploy --production
