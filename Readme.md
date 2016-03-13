@@ -1,4 +1,4 @@
-# angular-sample-app [![Dependency Status](https://gemnasium.com/maxklenk/angular-sample-app.svg)](https://gemnasium.com/maxklenk/angular-sample-app) [![Circle CI](https://circleci.com/gh/maxklenk/angular-sample-app.svg?style=svg)](https://circleci.com/gh/maxklenk/angular-sample-app)
+# angular-sample-app [![Dependency Status](https://gemnasium.com/maxklenk/angular-sample-app.svg)](https://gemnasium.com/maxklenk/angular-sample-app) [![Build Status](https://travis-ci.org/maxklenk/angular-sample-app.svg?branch=master)](https://travis-ci.org/maxklenk/angular-sample-app) [![Circle CI](https://circleci.com/gh/maxklenk/angular-sample-app.svg?style=svg)](https://circleci.com/gh/maxklenk/angular-sample-app)
 
 AngularJS seed app with an optimized build system to get started right away.
 
