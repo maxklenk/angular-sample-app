@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var gulpModular = require('gulp-modular');
 var gulpModularKarma = require('gulp-modular-karma');
 var gulpModularRelease = require('gulp-modular-release');
-var runSequence = require('run-sequence');
 var fs = require('fs');
 
 var getPackageJson = function() {
@@ -164,7 +163,7 @@ var config = {
   },
 
   /***** Deployment *****/
-
+  
   //// task [`gitDeploy`] deploys to a specific branch in your git repository
   gitDeploy: {
     //  src: 'dist/', // the local root of the deploy repo
@@ -217,10 +216,3 @@ var config = {
 gulpModular(gulp, config);
 gulpModularKarma(gulp, config);
 gulpModularRelease(gulp, config);
-
-
-// gulp deploy
-// build project and push result to server
-gulp.task('deploy', function() {
-  runSequence('clean', 'git-deploy');
-});

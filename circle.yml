@@ -1,0 +1,28 @@
+machine:
+  node:
+
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+  artifacts:
+    - "coverage"
+
+dependencies:
+  pre:
+    - npm install -g npm bower
+  post:
+    - bower install
+    - git config --global user.name "CircleCI"
+    - git config --global user.email "ci@stomt.com"
+
+test:
+  post:
+    - cp coverage/unit/unit-results.xml $CIRCLE_TEST_REPORTS/unit-results.xml
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - gulp git-deploy --production
