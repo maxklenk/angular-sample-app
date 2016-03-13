@@ -13,6 +13,9 @@ cache:
   directories:
     - node_modules
 
+node_js:
+  - '0.12'
+
 before_script:
   - npm install -g bower gulp
   - bower install
