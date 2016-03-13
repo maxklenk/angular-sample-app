@@ -25,9 +25,10 @@ before_script:
 script:
   - npm test
 
-deploy:
-  - provider: script
-    script: gulp git-deploy --production
-    skip_cleanup: true
-    on:
-      branch: master
+# already done on circleCI
+#deploy:
+#  - provider: script
+#    script: gulp git-deploy --production
+#    skip_cleanup: true
+#    on:
+#      branch: master
